@@ -1,0 +1,32 @@
+@mixin contenedoresImagenes {
+    .contenedor-group {
+        img {
+            width: 10rem;
+            height: 7rem;
+        }
+    }
+}
+
+/*
+@mixin flex-nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+@mixin encabezados($tamano){
+    h1{
+        font-size: $tamano; 
+    }
+
+    h2{
+        font-size: $tamano -10; 
+    }
+   
+}
+
+@mixin size-hover($pixeles) {
+    font: {
+        size: $pixeles;
+    }
+}
+*/

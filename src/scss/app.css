@@ -1,0 +1,54 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+body h1 {
+  color: #1c1c70;
+}
+body h2 {
+  color: #ffc0cb;
+}
+
+/*
+@include m.encabezados(30px);
+header {
+    background-color: v.$morado;
+    padding: 2%;
+
+    h1 {
+        color: v.$blanco;
+
+        text: {
+            transform: uppercase;
+            align: center;
+        }
+    }
+
+    nav {
+        //display:flex;
+        //justify-content: space-around;
+        @include m.flex-nav;
+
+        a {
+            color: v.$blanco;
+            text-transform: uppercase;
+
+            font: {
+                size: 15px;
+                family: v.$fuente-principal;
+            }
+
+            &:hover {
+                @include m.color-hover;
+                @include m.size-hover(30px);
+            }
+        }
+
+        @media(width <=768px) {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+}
+*/
+
+/*# sourceMappingURL=app.css.map */

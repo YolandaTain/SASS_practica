@@ -1,0 +1,107 @@
+@use '../base/colores' as c;
+@use '../base/fuentes' as f;
+@use '../base/mixins' as m;
+
+%button {
+    background-color: blanchedalmond;
+    color: chocolate;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-radius: 10px;
+    border-color: c.$secundario;
+}
+
+body {
+    @include m.contenedoresImagenes;
+
+    font: {
+        family: f.$fuente-principal;
+    }
+
+    h1 {
+        color: c.$primario;
+    }
+
+    h2 {
+        color: c.$secundario;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0rem;
+    }
+
+    #añadirComidas {
+        @extend %button;
+        font-size: 1rem;
+        &:hover{
+            color: c.$primario;
+        }
+    }
+
+    #añadirRecetas {
+        @extend %button;
+        font-size: 2rem;
+
+        &:hover{
+            box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+        }
+    }
+
+}
+
+@for $i from 1 through 3 {
+    .item-#{$i} {
+        &:hover {
+            border: 1px * $i solid red;
+        }
+
+    }
+
+
+}
+
+
+
+
+/*
+@include m.encabezados(30px);
+header {
+    background-color: v.$morado;
+    padding: 2%;
+
+    h1 {
+        color: v.$blanco;
+
+        text: {
+            transform: uppercase;
+            align: center;
+        }
+    }
+
+    nav {
+        //display:flex;
+        //justify-content: space-around;
+        @include m.flex-nav;
+
+        a {
+            color: v.$blanco;
+            text-transform: uppercase;
+
+            font: {
+                size: 15px;
+                family: v.$fuente-principal;
+            }
+
+            &:hover {
+                @include m.color-hover;
+                @include m.size-hover(30px);
+            }
+        }
+
+        @media(width <=768px) {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+}
+*/

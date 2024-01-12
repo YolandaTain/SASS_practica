@@ -1,0 +1,118 @@
+@charset "UTF-8";
+/*
+@mixin flex-nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+@mixin encabezados($tamano){
+    h1{
+        font-size: $tamano; 
+    }
+
+    h2{
+        font-size: $tamano -10; 
+    }
+
+}
+
+@mixin size-hover($pixeles) {
+    font: {
+        size: $pixeles;
+    }
+}
+*/
+body #añadirRecetas, body #añadirComidas {
+  background-color: blanchedalmond;
+  color: chocolate;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  border-radius: 10px;
+  border-color: #ffc0cb;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+body .contenedor-group img {
+  width: 10rem;
+  height: 7rem;
+}
+body h1 {
+  color: #63701c;
+}
+body h2 {
+  color: #ffc0cb;
+}
+body ul {
+  list-style: none;
+  padding: 0rem;
+}
+body #añadirComidas {
+  font-size: 1rem;
+}
+body #añadirComidas:hover {
+  color: #63701c;
+}
+body #añadirRecetas {
+  font-size: 2rem;
+}
+body #añadirRecetas:hover {
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.item-1:hover {
+  border: 1px solid red;
+}
+
+.item-2:hover {
+  border: 2px solid red;
+}
+
+.item-3:hover {
+  border: 3px solid red;
+}
+
+/*
+@include m.encabezados(30px);
+header {
+    background-color: v.$morado;
+    padding: 2%;
+
+    h1 {
+        color: v.$blanco;
+
+        text: {
+            transform: uppercase;
+            align: center;
+        }
+    }
+
+    nav {
+        //display:flex;
+        //justify-content: space-around;
+        @include m.flex-nav;
+
+        a {
+            color: v.$blanco;
+            text-transform: uppercase;
+
+            font: {
+                size: 15px;
+                family: v.$fuente-principal;
+            }
+
+            &:hover {
+                @include m.color-hover;
+                @include m.size-hover(30px);
+            }
+        }
+
+        @media(width <=768px) {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+}
+*/
+
+/*# sourceMappingURL=app.css.map */
